@@ -32,14 +32,14 @@
 
         <nav id="nav-wrap">
             <ul id="nav" className="nav">
-               <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
+               <li><a className="smoothscroll" href="#home">Home</a></li>
                <li><a className="smoothscroll" href="#about">About</a></li>
                <li><a className="smoothscroll" href="#resume">Resume</a></li>
                <li><a className="smoothscroll" href="#projects">Projects</a></li>
                <li><a className="smoothscroll" href="#contact">Contact</a></li>
             </ul>
          </nav>
-    <body href="#home">
+    <body id="home">
         <style>
             astro-island,astro-slot {
                 display: contents
@@ -162,6 +162,10 @@
             </header>
         </astro-island>
         <astro-island uid="Z1K4Tsl" component-url="/Home.f65cd48b.js" component-export="default" renderer-url="/client.c8206b23.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;Home&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island>
+        <p class="scrolldown">
+          <a class="smoothscroll" id=""><i class="fa-solid fa-circle-down"></i></a>
+      </p>
+        <div id="about">
         <div class="responsive-container-block bigContainer">
             <div class="responsive-container-block Container bottomContainer">
               <div class="allText bottomText">
@@ -188,11 +192,10 @@
             </div>
           </div>
     </body>
-
-    <p class="scrolldown">
-        <a class="smoothscroll" href="#resume"><i class="icon-down-circle"></i></a>
-    </p>
-    <div id="workexperience" class="sectionClass">
+  </div>
+</div>
+    
+    <div id="resume" class="sectionClass">
       <div class="row ">
         <div class="sectiontitle">
           <p class="text-blk subHeadingText" style="color:white;text-align:center;">
@@ -283,7 +286,7 @@
       </div>
     </div>
 
-      <p href="#projects"class="text-blk subHeadingText" style="color:white;text-align:center;">
+      <p id="projects"class="text-blk subHeadingText" style="color:white;text-align:center;">
         Some of my recent projects.
       </p>
 

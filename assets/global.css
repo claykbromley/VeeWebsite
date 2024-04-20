@@ -313,6 +313,7 @@
 	  right: auto;
 	  border-right-color: transparent;
 	  border-bottom-color: rgb(45, 47, 49);
+
 	  top: -20px;
 	}
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
@@ -1224,4 +1225,16 @@ button {
   .cd-timeline__img--picture {
     background-color: hsl(266, 15%, 43%);
     background-color: var(--cd-color-4);
+}
+
+html{
+	scroll-behavior: smooth;;
+  }
+
+#about {
+	padding-top: 80px;
+}
+
+#projects {
+	padding-top: 90px;
 }
