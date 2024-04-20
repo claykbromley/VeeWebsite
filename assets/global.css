@@ -467,7 +467,7 @@
 	color: gray;
   }
 
-@font-face {
+/*@font-face {
 	font-family: 'Graphik';
 	src: url('/fonts/graphik-regular.woff2') format('woff2');
 	font-style: normal;
@@ -501,7 +501,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-}  
+}  */
   .responsive-container-block {
 	background-color: #1b191a;
 	min-height: 75px;
@@ -1117,8 +1117,8 @@ h6 {
 	--inline-code-background-color: #1b191a;
 	--code-background-color: #1b191a;
 
-	--ff-heading: 'Graphik', sans-serif;
-	--ff-text: 'Wotfard', serif;
+	--ff-heading: Open Sans, sans-serif;
+	--ff-text: Open Sans;
 	--ff-code: 'IBM Plex Mono', monospace;
 
 	--fw-regular: 400;
