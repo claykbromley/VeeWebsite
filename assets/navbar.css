@@ -20,7 +20,6 @@ nav li {
 }
 
 @media (max-width: 991px) {
-    <style>
         .navbar-nav .nav-item {
             text-align: center;
         }
