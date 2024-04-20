@@ -39,7 +39,6 @@
 	font-display: swap;
 }  
   .responsive-container-block {
-	background-color: #1b191a;
 	min-height: 75px;
 	height: fit-content;
 	width: 100%;
@@ -82,7 +81,7 @@
 	font-size: 23px;
 	font-weight: 700;
 	line-height: 28px;
-	color: #fff;
+	color: rgb(0, 135, 177);
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 10px;
