@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="stylesheet" href="/styles/global.css">
+        <meta name="generator" content="Astro v1.9.2">
+        <title>Shiyun Lu</title>
+        <meta name="description" content="Shiyun Lu personal portfolio">
+        <link rel="stylesheet" href="/assets/index.59ac0590.css"/>
+    </head>
+    <body>
+        <style>
+            astro-island,astro-slot {
+                display: contents
+            }
+        </style>
+        <script>
+            (self.Astro = self.Astro || {}).load = a=>{
+                (async()=>await (await a())())()
+            }
+            ,
+            window.dispatchEvent(new Event("astro:load"));
+            var l;
+            {
+                const c = {
+                    0: t=>t,
+                    1: t=>JSON.parse(t, o),
+                    2: t=>new RegExp(t),
+                    3: t=>new Date(t),
+                    4: t=>new Map(JSON.parse(t, o)),
+                    5: t=>new Set(JSON.parse(t, o)),
+                    6: t=>BigInt(t),
+                    7: t=>new URL(t),
+                    8: t=>new Uint8Array(JSON.parse(t)),
+                    9: t=>new Uint16Array(JSON.parse(t)),
+                    10: t=>new Uint32Array(JSON.parse(t))
+                }
+                  , o = (t,s)=>{
+                    if (t === "" || !Array.isArray(s))
+                        return s;
+                    const [e,n] = s;
+                    return e in c ? c[e](n) : void 0
+                }
+                ;
+                customElements.get("astro-island") || customElements.define("astro-island", (l = class extends HTMLElement {
+                    constructor() {
+                        super(...arguments);
+                        this.hydrate = ()=>{
+                            if (!this.hydrator || this.parentElement && this.parentElement.closest("astro-island[ssr]"))
+                                return;
+                            const s = this.querySelectorAll("astro-slot")
+                              , e = {}
+                              , n = this.querySelectorAll("template[data-astro-template]");
+                            for (const r of n) {
+                                const i = r.closest(this.tagName);
+                                !i || !i.isSameNode(this) || (e[r.getAttribute("data-astro-template") || "default"] = r.innerHTML,
+                                r.remove())
+                            }
+                            for (const r of s) {
+                                const i = r.closest(this.tagName);
+                                !i || !i.isSameNode(this) || (e[r.getAttribute("name") || "default"] = r.innerHTML)
+                            }
+                            const a = this.hasAttribute("props") ? JSON.parse(this.getAttribute("props"), o) : {};
+                            this.hydrator(this)(this.Component, a, e, {
+                                client: this.getAttribute("client")
+                            }),
+                            this.removeAttribute("ssr"),
+                            window.removeEventListener("astro:hydrate", this.hydrate),
+                            window.dispatchEvent(new CustomEvent("astro:hydrate"))
+                        }
+                    }
+                    connectedCallback() {
+                        !this.hasAttribute("await-children") || this.firstChild ? this.childrenConnectedCallback() : new MutationObserver((s,e)=>{
+                            e.disconnect(),
+                            this.childrenConnectedCallback()
+                        }
+                        ).observe(this, {
+                            childList: !0
+                        })
+                    }
+                    async childrenConnectedCallback() {
+                        window.addEventListener("astro:hydrate", this.hydrate);
+                        let s = this.getAttribute("before-hydration-url");
+                        s && await import(s),
+                        this.start()
+                    }
+                    start() {
+                        const s = JSON.parse(this.getAttribute("opts"))
+                          , e = this.getAttribute("client");
+                        if (Astro[e] === void 0) {
+                            window.addEventListener(`astro:${e}`, ()=>this.start(), {
+                                once: !0
+                            });
+                            return
+                        }
+                        Astro[e](async()=>{
+                            const n = this.getAttribute("renderer-url")
+                              , [a,{default: r}] = await Promise.all([import(this.getAttribute("component-url")), n ? import(n) : ()=>()=>{}
+                            ])
+                              , i = this.getAttribute("component-export") || "default";
+                            if (!i.includes("."))
+                                this.Component = a[i];
+                            else {
+                                this.Component = a;
+                                for (const d of i.split("."))
+                                    this.Component = this.Component[d]
+                            }
+                            return this.hydrator = r,
+                            this.hydrate
+                        }
+                        , s, this)
+                    }
+                    attributeChangedCallback() {
+                        this.hydrator && this.hydrate()
+                    }
+                }
+                ,
+                l.observedAttributes = ["props"],
+                l))
+            }
+        </script>
+        <script>
+            (self.Astro = self.Astro || {}).only = t=>{
+                (async()=>await (await t())())()
+            }
+            ,
+            window.dispatchEvent(new Event("astro:only"));
+        </script>
+        <astro-island uid="ZjBrUs" component-url="/Nav.40d9bdd0.js" component-export="default" renderer-url="/client.c8206b23.js" props="{&quot;isHeaderDark&quot;:[0,false],&quot;restrictWidth&quot;:[0,false]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;Nav&quot;,&quot;value&quot;:true}" await-children="">
+            <header class="padding svelte-bz9iw8">
+                <div class="header-wrapper svelte-bz9iw8">
+                    <a href="/" class="logo svelte-bz9iw8">
+                        <svg width="100%" height="100%" viewBox="0 0 107 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="99.5" cy="92.5" r="7.5" fill="currentColor"></circle>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100C77.6142 100 100 77.6142 100 50C100 22.3858 77.6142 0 50 0C22.3858 0 0 22.3858 0 50C0 77.6142 22.3858 100 50 100ZM59.2928 28.4006C61.7776 30.0312 63.1948 32.322 63.5442 35.2727H70.5329C70.4358 32.2637 69.504 29.575 67.7374 27.2067C65.9902 24.8383 63.6219 22.9747 60.6323 21.6158C57.6427 20.2374 54.226 19.5483 50.3823 19.5483C46.5774 19.5483 43.1316 20.2472 40.0449 21.6449C36.9777 23.0232 34.5317 24.9645 32.7069 27.4688C30.9015 29.9536 29.9988 32.8655 29.9988 36.2045C29.9988 40.223 31.3577 43.4747 34.0755 45.9595C36.7933 48.4444 40.4817 50.3565 45.1408 51.696L52.4789 53.7926C54.5755 54.375 56.5265 55.0545 58.3319 55.831C60.1373 56.6075 61.5932 57.617 62.6998 58.8594C63.8063 60.1018 64.3596 61.7131 64.3596 63.6932C64.3596 65.8674 63.7189 67.7699 62.4377 69.4006C61.1564 71.0118 59.419 72.2737 57.2253 73.1861C55.0317 74.0791 52.5565 74.5256 49.7999 74.5256C47.4315 74.5256 45.2185 74.1761 43.1607 73.4773C41.1223 72.759 39.4334 71.6719 38.0939 70.2159C36.7739 68.7405 36.0168 66.8769 35.8226 64.625H28.3681C28.601 67.8864 29.6008 70.7498 31.3674 73.2152C33.1534 75.6806 35.5994 77.6025 38.7054 78.9808C41.8309 80.3591 45.5291 81.0483 49.7999 81.0483C54.3813 81.0483 58.2736 80.2815 61.4767 78.7479C64.6993 77.2142 67.1453 75.1468 68.8148 72.5455C70.5037 69.9441 71.3482 67.0322 71.3482 63.8097C71.3482 61.0142 70.7755 58.6555 69.6301 56.7337C68.4848 54.8118 67.0288 53.2393 65.2623 52.0163C63.5151 50.7739 61.6806 49.7936 59.7587 49.0753C57.8562 48.357 56.1285 47.794 54.5755 47.3864L48.5186 45.7557C47.4121 45.4645 46.1988 45.0859 44.8787 44.62C43.5587 44.1347 42.2968 43.5232 41.0932 42.7855C39.8896 42.0284 38.8996 41.0869 38.123 39.9609C37.3659 38.8156 36.9874 37.447 36.9874 35.8551C36.9874 33.9526 37.531 32.254 38.6181 30.7592C39.7246 29.2644 41.2582 28.09 43.2189 27.2358C45.199 26.3816 47.5092 25.9545 50.1493 25.9545C53.7601 25.9545 56.8079 26.7699 59.2928 28.4006Z" fill="currentColor"></path>
+                        </svg>
+                    </a>
+                    <button class="hamburger svelte-bz9iw8" aria-label="open menu">
+                        <span class="top svelte-bz9iw8"></span>
+                        <span class="bottom svelte-bz9iw8"></span>
+                    </button>
+                </div>
+            </header>
+        </astro-island>
+        <astro-island uid="Z1K4Tsl" component-url="/Home.f65cd48b.js" component-export="default" renderer-url="/client.c8206b23.js" props="{}" ssr="" client="only" opts="{&quot;name&quot;:&quot;Home&quot;,&quot;value&quot;:&quot;svelte&quot;}"></astro-island>
+    </body>
+    <section id="about">
+        <div className="row section-intro">
+
+           <div className="three columns">
+
+              <h5>About</h5>
+              <h1>Let me introduce myself.</h1>
+              <div className="intro-info">
+              <img className="profile-pic"  src="images/pranay-hs.png" alt="" />
+              </div>
+              <div>
+              <p className="lead">
+              {
+                resumeData.aboutme
+              }
+              </p>
+              <p className="lead">
+              {
+                resumeData.address
+              }
+              </p>
+              </div>
+              <div className="row button-section">
+               <div class="col-twelve"></div>
+              <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+              <a href="files/resume.pdf" title="Download CV" class="button button-primary">Download CV</a>
+              </div>
+           </div>
+        </div>
+     </section>
+</html>
