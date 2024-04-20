@@ -1267,3 +1267,17 @@ html{
 #resume {
 	padding-top: 100px;
 }
+
+.copyright{
+	display: flex;
+	justify-content: center;
+}
+
+.creators{
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+#cc {
+	margin-top: 5.5px;
+}
