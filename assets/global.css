@@ -313,6 +313,7 @@
 	  right: auto;
 	  border-right-color: transparent;
 	  border-bottom-color: rgb(45, 47, 49);
+
 	  top: -20px;
 	}
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
@@ -1226,24 +1227,14 @@ button {
     background-color: var(--cd-color-4);
 }
 
-.contact-body{
-	background-color: rgb(39, 37, 37);
+html{
+	scroll-behavior: smooth;;
+  }
+
+#about {
+	padding-top: 80px;
 }
 
-.contact-header{
-	text-align: center;
-	padding-top: 50px;
-}
-
-.contact-icons {
-	list-style-type: none;
-	text-align: center;
-	display: flex;
-  	justify-content: center;
-
-}
-.contact-icons > li {
-	margin-left: 90px;
-	margin-right: 90px;
-	margin-bottom: 20px;
+#projects {
+	padding-top: 90px;
 }
