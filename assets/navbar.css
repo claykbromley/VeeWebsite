@@ -103,3 +103,14 @@ nav li {
    
    ul#nav li a:active { background-color: transparent !important; }
    ul#nav li.current a { color: #F06000; }
+
+   #nav-wrap > a.mobile-btn {
+    display: none;
+}
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
