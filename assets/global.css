@@ -5,7 +5,7 @@
 
 
 .sectionClass {
-	padding: 80px 0px 50px 0px;
+	padding: 70px 0px 0px 0px;
 	position: relative;
 	display: block;
 	background: rgb(249, 249, 249);
@@ -213,7 +213,7 @@
   }
   
   .cbp_tmtimeline li {
-	margin-bottom: 70px;
+	margin-bottom: 15px;
 	position: relative;
   }
   
@@ -303,8 +303,7 @@
 	  text-align: left;
 	}
 	.cbp_tmtimeline > li .cbp_tmlabel {
-	  margin: 0px 0 70px 0;
-	  padding: 50px 30px 30px 30px;
+	  margin: 0px 0 400px 0;
 	  font-weight: 400;
 	  font-size: 95%;
 	  float: left;
