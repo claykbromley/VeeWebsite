@@ -118,27 +118,14 @@ h6 {
 	--clr-black: #000;
 	--clr-light: rgb(240, 240, 240);
 	--clr-light-border: rgb(216, 216, 216);
-	--clr-dark: rgb(35, 35, 35);
+	--clr-dark: rgb(1, 1, 1);
 	--clr-dark-border: rgb(45, 45, 45);
 	--bg-gradient-blue: linear-gradient(
-		rgb(120, 140, 176) 0%,
-		rgb(174, 185, 212) 100%
+		#1b191a,
+		#1b191a
 	);
-	--bg-gradient-yellow: linear-gradient(
-		rgb(222, 208, 197) 0%,
-		rgb(235, 230, 222) 100%
-	);
-	--bg-gradient-red: linear-gradient(
-		rgb(223, 156, 165) 0%,
-		rgb(231, 195, 200) 100%
-	);
-	--bg-gradient-green: linear-gradient(
-		rgb(184, 192, 183) 0%,
-		rgb(204, 214, 209) 100%
-	);
-
-	--inline-code-background-color: #e3e3e3;
-	--code-background-color: #282c34;
+	--inline-code-background-color: #1b191a
+	--code-background-color: #1b191a;
 
 	--ff-heading: 'Graphik', sans-serif;
 	--ff-text: 'Wotfard', serif;
