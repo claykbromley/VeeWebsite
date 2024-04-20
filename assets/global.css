@@ -128,7 +128,7 @@
   }
   
   .cbp_tmtimeline > li .cbp_tmlabel {
-	margin: 0 0 15px 25%;
+	margin: 0 0 20px 25%;
 	background: rgb(45, 47, 49);
 	color: #FFF;
 	padding: 30px;
@@ -144,9 +144,8 @@
   .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
 	background: rgb(45, 47, 49);
   }
-  
+
   .cbp_tmtimeline > li .cbp_tmlabel h3 {
-	margin-top: 0px;
 	color: white;
 	font-size: 20px;
 	margin-bottom: 5px;
@@ -206,7 +205,7 @@
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
 	color: #151515;
-	background: rgb(45, 47, 49);
+	background: #1b191a;
 	border-radius: 50%;
 	text-align: center;
 	left: 8%;
@@ -281,6 +280,7 @@
 	position: absolute;
 	top: 30px;
 	right: 20px;
+	margin-right: 300px;
   }
   
   .date i {
@@ -303,7 +303,7 @@
 	  text-align: left;
 	}
 	.cbp_tmtimeline > li .cbp_tmlabel {
-	  margin: 30px 0 70px 0;
+	  margin: 0px 0 70px 0;
 	  padding: 50px 30px 30px 30px;
 	  font-weight: 400;
 	  font-size: 95%;
@@ -1043,7 +1043,7 @@
 	2. Remove default margin
 */
 * {
-	margin: 0;
+	margin: 100;
 	padding: 0;
 }
 /*
