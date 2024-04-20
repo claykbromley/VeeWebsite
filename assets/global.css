@@ -207,7 +207,7 @@
   }
   
   .mainVideo {
-	width: 90%;
+	width: 80%;
 	height: 400px;
 	margin-top: -30px;
 	margin-right: 0px;
@@ -757,3 +757,10 @@ button {
 	margin-left: 0px;
   }
 
+p.text-blk.headingText {
+	text-align:center;
+}
+
+p.text-blk.subHeadingText {
+	text-align:center;
+}
