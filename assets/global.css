@@ -3,6 +3,10 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+h1{
+	color: white
+}
+
 @font-face {
 	font-family: 'Graphik';
 	src: url('/fonts/graphik-regular.woff2') format('woff2');
