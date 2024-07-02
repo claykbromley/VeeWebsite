@@ -238,7 +238,7 @@ h6 {
 }
 .instagram__media .img {
   max-width: 100%;
-  height: 61.2vh;
+  height: 70.2vh;
 }
 .instagram__buttons {
   padding-block: 12px;
@@ -282,4 +282,50 @@ h6 {
 }
 .instagram__icon--saved path {
   stroke-width: 2;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 45%;
+  margin: 0 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #034569;
+  font-family: 'open sans', sans-serif;
+  font-weight: bold;
+}
+
+td {
+  font-family: 'open sans', sans-serif;
+}
+
+th:first-child {
+  border-top-left-radius: 20px;
+}
+
+th:last-child {
+  border-top-right-radius: 20px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
 }
